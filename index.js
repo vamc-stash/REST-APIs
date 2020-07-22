@@ -61,7 +61,7 @@ app.get('/api/users/:id', (req, res) => {
 //POST /api/users -> inserts a new user
 app.post('/api/users', async (req, res) => {
 	try {
-    const value = await schema.validateAsync(req.body);
+  	const value = await schema.validateAsync(req.body);
 	}
 	catch (err) { 
 		res.status(400).send(err.details[0].message)
